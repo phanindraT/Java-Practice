@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class HashMapExample {
     public static void main(String[] args) {
-        System.out.println("new");
+        System.out.println("Hashmap :");
 
         HashMap<String,String> hashmap = new HashMap<>();
         hashmap.put("turvo","turvo software");
