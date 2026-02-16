@@ -1,10 +1,30 @@
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+/*
+HashMap (most used) :
+Stores key-value
+Allows one null key
+Fast (O(1) average)
+
+LinkedHashMap :
+Maintains insertion order
+
+TreeMap :
+Sorted by key
+No null keys allowed
+
+ConcurrentHashMap (important for SDET) :
+Thread-safe
+No locking entire map
+Used in multi-threaded test frameworks
+
+Hashtable : legacy, synchronized
+ */
 
 public class HashMapExample {
     public static void main(String[] args) {
-        System.out.println("Hashmap :");
+        System.out.println("Hashmap:");
 
         HashMap<String,String> hashmap = new HashMap<>();
         hashmap.put("turvo","turvo software");
