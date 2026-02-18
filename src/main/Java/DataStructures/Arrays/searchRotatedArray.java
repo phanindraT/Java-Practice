@@ -10,7 +10,6 @@ If yes → go there.
 If no → go to other half.
 
 We keep reducing search space like binary search (modified binary search).
-
 Time complexity is O(log n).
  */
 public class searchRotatedArray {

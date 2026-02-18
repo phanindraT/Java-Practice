@@ -67,6 +67,38 @@ public class turvo {
 //        RestAssured.given().log().all().contentType(ContentType.JSON)
 //                .body(requestBody).when().post("https://jsonplaceholder.typicode.com/posts").then().log().all();
 
+        /* We can send requestBody as Java object too (in .body(requestBody)).  REST Assured uses a library called:
+Jackson (default) or Gson (if configured). This process is called Serialization. Converting Java Object → JSON
+See builder patter for example. Getters Are Mandatory.
+REST Assured uses Jackson internally to convert Java objects to JSON. Jackson serializes based on getter methods (getName(), getEmail(), etc.). Without getters, it throws FAIL_ON_EMPTY_BEANS error.
+
+ex: public class CreateUserRequest {
+    private String name;
+    private String job;
+}
+
+And values are:
+name = "Phani"
+job = "SDET"
+
+REST Assured converts it internally to:
+{
+  "name": "Phani",
+  "job": "SDET"
+}
+
+That JSON is what actually goes in HTTP request body.
+
+When Does This Work?
+Automatic conversion works when:
+You have Jackson dependency
+Fields have getters (recommended)
+OR fields are not private
+OR you use Lombok @Data
+
+
+*/
+
     }
 
 
