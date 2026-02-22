@@ -7,10 +7,10 @@ public class QA {
 
         int[] a = { 8,4, 4,4, 8, 9};
         String[] b = new String[]{};
-        HashMap<String,String> c = new HashMap<>();
-        Set<String> d = new HashSet<>();
-        ArrayList<String> e= new ArrayList<>();
 
+        HashMap<String,String> hashmap = new HashMap<>();
+        Set<String> set = new HashSet<>();
+        ArrayList<String> list= new ArrayList<>();
 
         int z=0;
         int temp=0;
