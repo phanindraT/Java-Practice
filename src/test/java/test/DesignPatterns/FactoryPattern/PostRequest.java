@@ -12,5 +12,5 @@ public class PostRequest implements APIRequest{
                 .header("x-api-key", "reqres_fc756d0a76394c44a7124b3e47884161")
                 .body("{\"name\": \"Google\"}");
 
-        }
+    }
 }

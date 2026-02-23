@@ -3,7 +3,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
-public class createUser {
+public class CreateUser {
 
     @Test(description = "using builder design pattern for building request payload")
    public  void createUser(){
