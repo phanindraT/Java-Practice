@@ -36,6 +36,8 @@ public class LowerBoundUpperBound {
         }
         return  result;
     }
+
+
   public static int upperBound(int[] arr, int key){
         int low=0; int high = arr.length-1;
         int result = arr.length; // if key is bigger than all elements
