@@ -16,7 +16,6 @@ public class TwoSum {
         int[] result = twoSum(arr,target);
         System.out.println(Arrays.toString(result));
 
-
     }
     public static int[] twoSum(int[] arr, int target){
         HashMap<Integer,Integer> hashmap = new HashMap<>();
