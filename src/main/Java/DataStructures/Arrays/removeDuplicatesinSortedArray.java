@@ -11,6 +11,8 @@ public class removeDuplicatesinSortedArray {
         arr = new int[]{1,2,2,2,4,5,5,5,8,9,9};
         System.out.println("Atmost twice in the array :");
         removeDuplicatesinSortedArrayNew(arr); // atmost 2 times.
+        // TC -> O(n).  SC -> O(1)
+
     }
 
     public static void removeDuplicatesinSortedArray(int[] arr) {
