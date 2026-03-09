@@ -3,8 +3,8 @@ package DataStructures.Arrays;
 import java.util.Arrays;
 
 /*
-Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
-Note that you must do this in-place without making a copy of the array.
+Given an array of integers, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+Note that you must do this in-place without making a copy of the array.  -- Two pointer approach.
 */
 
 // TC -> O(n).  SC -> O(1)

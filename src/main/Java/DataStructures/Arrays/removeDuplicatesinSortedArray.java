@@ -16,11 +16,11 @@ public class removeDuplicatesinSortedArray {
     }
 
     public static void removeDuplicatesinSortedArray(int[] arr) {
-        int j =0;
+        int j=1;
         for(int i =1; i < arr.length; i++){
-            if(arr[i] != arr[i-1]){
-                j++;
+            if(arr[i] != arr[j-1]){
                 arr[j] = arr[i];
+                j++;
             }
         }
         for(int i =0; i <=j; i++){
@@ -43,6 +43,6 @@ public class removeDuplicatesinSortedArray {
 /*
 Interview Trick :  Whenever you hear:
 Allow atmost x duplicates in a sorted array,
-Think immediately:  compare with nums[j-x]  with i and j starting from x.
+Think immediately:  compare with nums[j-x]  with i = x & and j = x initially.
 
  */
