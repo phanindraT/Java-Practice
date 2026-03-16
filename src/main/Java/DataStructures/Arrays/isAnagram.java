@@ -49,6 +49,7 @@ public class isAnagram {
 
     public  static  void arraysSort(String s1, String s2){
         //  TC --> O(n log n). SC --> O(n)+O(n) = O(n).
+
       char[] s1Array= s1.toCharArray();
       char[] s2Array= s2.toCharArray();
       Arrays.sort(s1Array);
